@@ -1,0 +1,26 @@
+{
+     "manifest_version": 3,
+     "name": "通报组快捷小工具",
+     "description": "暂时支持复选框批量勾选。 ---(鱼儿游)",
+     "version": "0.0.1",
+     "icons": {
+          "48": "images/tongbao.png"
+     },
+     "action": {
+          "default_icon": {
+               "48": "images/tongbao.png"
+          },
+          "default_popup": "popup.html"
+     },
+     "permissions": ["activeTab" ],
+     
+     "background": {
+       "service_worker": "background.js"
+     },
+     "content_scripts": [
+       {
+         "matches": ["<all_urls>"],
+         "js": ["content.js"]
+       }
+     ]
+     }

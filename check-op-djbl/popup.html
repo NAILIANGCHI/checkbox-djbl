@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>主页</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    .head {
+      width: 200px;
+      padding: 5px 5px;
+      display: flex; /* 将子元素排列在一行上 */
+      align-items: center; /* 垂直居中 */
+    }
+    .head img {
+      width: 30px;
+      height: 30px;
+      margin-right: 5px;
+    }
+    .body {
+      width: 300px;
+    }
+    
+    .body h4, p {
+      margin: 2px 5px;
+      color: #5a5a5a;
+    }
+  </style>
+</head>
+<body>
+  <div class="head">
+    <img src="./images/tongbao.png" alt="">
+    <h3>通报组工具 --- 鱼儿游</h3>
+  </div>
+  <div class="body">
+    <h4>使用方法:</h4>
+    <p>1. 先选中一个通报记录</p>
+    <p>2. 然后向下滑动至需要通报的内容按住</p>
+    <p>3. Alt 键再点击该末尾的通报记录即可</p>
+    <span style="color: red; font:bold; margin-left: 5px;">注意: 若一次选择比较多可能会卡住</span>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
